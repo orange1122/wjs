@@ -1,0 +1,439 @@
+.header>div{
+
+}
+.header .row>div{
+	border:1px solid gray;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+}
+.header .row>div:first-child{
+	position: relative;
+}
+.header .row>div:first-child img{
+	display: none;
+	position: absolute;
+}
+.header .row>div:first-child a:hover +img{
+	display: block;
+	z-index: 999999;
+}
+.header .row>div a{
+	text-decoration: none;
+	color:gray;
+	font-size: 13px;
+}
+.header .row>div:nth-child(n+3) a{
+	padding-left: 10px;
+}
+/*导航栏*/
+.navbar-wjs {
+  background-color: #f8f8f8;
+  border-color: #e7e7e7;
+}
+.navbar-wjs .navbar-brand {
+  color: #777;
+  height: 80px;
+  line-height: 50px;
+}
+.navbar-wjs .navbar-brand span{
+	font-size: 50px;
+}
+.navbar-wjs .navbar-brand span:nth-child(1){
+	color: red;
+}
+.navbar-wjs .navbar-brand span:nth-child(2){
+	color: black;
+}
+.navbar-wjs .navbar-brand:hover,
+.navbar-wjs .navbar-brand:focus {
+  color: #5e5e5e;
+  background-color: transparent;
+}
+.navbar-wjs .navbar-text {
+  color: #777;
+}
+.navbar-wjs .navbar-nav > li > a {
+  color: #777;
+  height: 80px;
+  line-height: 50px;
+  
+}
+.navbar-wjs .navbar-nav > li > a:hover,
+.navbar-wjs .navbar-nav > li > a:focus {
+  color: #333;
+  background-color: transparent;
+  border-bottom: 3px solid red;
+}
+.navbar-wjs .navbar-nav > .active > a,
+.navbar-wjs .navbar-nav > .active > a:hover,
+.navbar-wjs .navbar-nav > .active > a:focus {
+  color: #555;
+  background-color: #e7e7e7;
+}
+.navbar-wjs .navbar-nav > .disabled > a,
+.navbar-wjs .navbar-nav > .disabled > a:hover,
+.navbar-wjs .navbar-nav > .disabled > a:focus {
+  color: #ccc;
+  background-color: transparent;
+}
+.navbar-wjs .navbar-toggle {
+  border-color: #ddd;
+  margin-top:25px;
+}
+.navbar-wjs .navbar-toggle:hover,
+.navbar-wjs .navbar-toggle:focus {
+  background-color: #ddd;
+}
+.navbar-wjs .navbar-toggle .icon-bar {
+  background-color: #888;
+}
+.navbar-wjs .navbar-collapse,
+.navbar-wjs .navbar-form {
+  border-color: #e7e7e7;
+}
+.navbar-wjs .navbar-nav > .open > a,
+.navbar-wjs .navbar-nav > .open > a:hover,
+.navbar-wjs .navbar-nav > .open > a:focus {
+  color: #555;
+  background-color: #e7e7e7;
+}
+@media (max-width: 767px) {
+  .navbar-wjs .navbar-nav .open .dropdown-menu > li > a {
+    color: #777;
+  }
+  .navbar-wjs .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-wjs .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #333;
+    background-color: transparent;
+  }
+  .navbar-wjs .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-wjs .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-wjs .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #555;
+    background-color: #e7e7e7;
+  }
+  .navbar-wjs .navbar-nav .open .dropdown-menu > .disabled > a,
+  .navbar-wjs .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  .navbar-wjs .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #ccc;
+    background-color: transparent;
+  }
+}
+.navbar-wjs .navbar-link {
+  color: #777;
+}
+.navbar-wjs .navbar-link:hover {
+  color: #333;
+}
+.navbar-wjs .btn-link {
+  color: #777;
+}
+.navbar-wjs .btn-link:hover,
+.navbar-wjs .btn-link:focus {
+  color: #333;
+}
+.navbar-wjs .btn-link[disabled]:hover,
+fieldset[disabled] .navbar-wjs .btn-link:hover,
+.navbar-wjs .btn-link[disabled]:focus,
+fieldset[disabled] .navbar-wjs .btn-link:focus {
+  color: #ccc;
+}
+/*轮播图*/
+.lbt{
+	position: relative;
+	top:-20px;
+}
+/*当做背景来设置 定宽高*/
+.lbt .banner_a{
+	height: 410px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: block;
+}
+.lbt .banner_a.image_a{
+	background-image: url('../images/slide_01_2000x410.jpg');
+}
+.lbt .banner_a.image_b{
+	background-image: url('../images/slide_02_2000x410.jpg');	
+}
+.lbt .banner_a.image_c{
+	background-image: url('../images/slide_03_2000x410.jpg');
+}
+.lbt .banner_a.image_d{
+	background-image: url('../images/slide_04_2000x410.jpg');
+}
+/*移动设备专用 图片自适应设备*/
+.mobile_a{
+	display: block;
+	/*width: 100%;*/
+}
+.mobile_a img{
+	display: block;
+	width: 100%;
+}
+/*主要信息栏*/
+.main .media{
+	padding-bottom: 20px;
+	color: gray;
+	cursor: pointer;
+}
+.main .media span{
+	font-size: 40px;
+	color: gray;
+}
+.main .media-body{
+	padding-left: 10px;
+}
+.main .media:hover{
+	color: red;
+	text-decoration:underline;
+}
+.main .media:hover span{
+	color: red;
+}
+/*主体第二部分*/
+.main2{
+	/*padding-top: 20px;*/
+	/*border-top: 1px solid gray;*/
+	border-bottom: 1px solid gray;
+}
+.main2 .container-fluid>div{
+	height:50px;
+	/*line-height: 100px;*/
+}
+.main2 div.pull-left a{
+	color: red;
+	text-decoration: underline;
+}
+.main2 div.pull-right:hover{
+	color:red;
+	cursor: pointer;
+	text-decoration: underline;
+}
+/*优惠券*/
+.yhq{
+	padding-bottom: 10px;
+}
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: white;
+}
+.mynav-tabs {
+  border-bottom: 1px solid gray;
+}
+.mynav-tabs > li {
+  float: left;
+}
+.mynav-tabs > li > a {
+	color: gray;
+	height: 40px;
+  	margin-right: 2px;
+  	line-height: 20px;
+  	border-radius: 4px 4px 0 0;
+}
+.mynav-tabs > li.active > a,
+.mynav-tabs > li.active > a:hover,
+.mynav-tabs > li.active > a:focus {
+  color: #555;
+  cursor: default;
+  background-color: skyblue;
+  border-bottom-color: transparent;
+  border-bottom: 3px solid red;
+}
+.yhq .tab-content  a.price_ticket{
+	display: block;
+	background-color: red;
+	margin:10px 0;
+	box-shadow: 2px 2px 3px grey;
+	color: white;
+}
+.price_ticket:hover{
+	text-decoration: none;
+}
+.price_ticket{
+	height: 150px;
+}
+.wjs_E915:before{
+	font-size: 40px;
+	position: absolute;
+}
+.ticket_right{
+	float: right;
+	height: 150px;
+	width: 108px;
+	padding-top: 20px;
+	border-left: 1px dashed white;
+	position: relative;
+}
+.ticket_left{
+	overflow: hidden;
+	height: 150px;
+	
+}
+.ticket_left h3{
+	font-size: 20px;
+	height: 20px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	text-align: center;
+	text-decoration: none;
+}
+.ticket_left>div{
+	margin-bottom: 10px;
+}
+.price_ticket .ticket_left > div:nth-of-type(2n) {
+    text-align: right;
+}
+.price_ticket .ticket_left p{
+	color: white;
+	font-size: 13px;
+	font-weight:900;
+	height: 13px;
+	overflow: hidden;
+}
+.price_ticket .ticket_right p{
+	text-align: center;
+	color:white;
+	font-style: 14px;
+	height: 14px;
+	overflow: hidden;
+	font-weight: 900;
+}
+.ticket_right:before,.ticket_right:after{
+	content:'';
+	display: block;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: white;
+	
+}
+.ticket_right:before{
+	top:-10px;
+	left: -10px;
+}
+.ticket_right:after{
+	bottom:-10px;
+	left: -10px;
+}
+/*新闻列表*/
+.news{
+	border-top: 1px solid gray;
+}
+.news h3{
+	border-bottom: 1px solid gray;
+	padding-bottom: 10px;
+}
+.news h3:before{
+	content: '';
+	display: block;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	border:1px solid gray;
+	position: absolute;
+	right: 5px;
+	bottom: 6px;
+}
+.news .news-tabs{
+	position: relative;
+	padding-top:20px;
+	/*overflow: hidden;*/
+}
+.news .news-tabs > li {
+  display: block;
+  margin-bottom: 50px;
+}
+.news .news-tabs > li>a{
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	font-size: 40px;
+	background-color: gray;
+	line-height: 60px;
+	text-align: center;
+	color: white;
+}
+.line{
+	width: 1px;
+	height: 470px;
+	border-left: 2px dashed gray;
+	position: absolute;
+	left:55px;
+	top: 21px;
+}
+.news-tabs > li.active > a,
+.news-tabs > li.active > a:hover,
+.news-tabs > li.active > a:focus {
+  color: white;
+  cursor: default;
+  background-color: red;
+}
+.news .tab-content ul{
+	padding: 0;
+	margin:0;
+	margin-top: 40px;
+}
+.news .tab-content ul li{
+	list-style: none;
+	padding:10px 0;
+}
+.news .tab-content ul li a{
+	color:gray;
+	font-size: 16px;
+}
+/*中等屏幕*/
+@media screen and (max-width: 1200px) {
+    .news-tabs > li{
+    	float: left;
+		width:25%;
+    }
+}
+/*foot部分*/
+.foot{
+	background-color: #eee;
+	padding-top: 20px;
+	text-align: center;
+}
+.foot h3{
+	font-size: 24px;
+	margin-bottom:10px;
+	margin-top: 0;
+}
+.foot ul{
+	display: inline-block;
+	padding: 0;
+
+}
+.foot ul li{
+	list-style: none;
+	float: left;
+	padding:0 20px;
+	height: 114px;
+}
+.foot ul li span{
+	font-size: 80px;
+	color: gray;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
